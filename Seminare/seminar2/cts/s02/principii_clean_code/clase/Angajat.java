@@ -42,7 +42,7 @@ public class Angajat extends Aplicant{
 	
 	
 	public void afisareaFinantarii() {
-		System.out.println("Angajatul "+super.getNume()+" "+super.getPrenume()+" primeste"+Angajat.sumaFinantata+" Euro/zi in proiect.");
+		System.out.println("Angajatul "+super.afisareFinantare(Angajat.sumaFinantata));
 	}
 	
 }

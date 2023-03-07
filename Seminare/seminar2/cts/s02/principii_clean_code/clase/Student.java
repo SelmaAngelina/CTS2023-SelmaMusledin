@@ -38,9 +38,9 @@ public class Student extends Aplicant {
 		return "Student " + super.toString() + "Facultate=" + facultate + ", An_studii=" + an_studii;
 	}
 	
-	
+	@Override
 	public void afisareaFinantarii() {
-		System.out.println("Studentul "+super.getNume()+" "+super.getPrenume()+" primeste"+Student.sumaFinantata+" Euro/zi in proiect.");
+		System.out.println("Studentul " + super.afisareFinantare(Student.sumaFinantata));
 	}
 	
 }

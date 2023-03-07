@@ -40,8 +40,9 @@ public class Elev extends Aplicant{
 		this.tutore = tutore;
 	}
 	
+	@Override
 	public void afisareaFinantarii() {
-		System.out.println("Angajatul "+super.getNume()+" "+super.getPrenume()+" primeste"+Elev.sumaFinantata+" Euro/zi in proiect.");
+		System.out.println("Angajatul" + super.afisareFinantare(Elev.sumaFinantata));
 	}
 	
 }

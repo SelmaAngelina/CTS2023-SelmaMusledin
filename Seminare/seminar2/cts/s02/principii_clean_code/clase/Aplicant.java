@@ -81,8 +81,9 @@ public abstract class Aplicant{
 		
 	}
 	
-	public void afisareFinantare(int sumaFinantata) {
-		System.out.println(this.getNume()+" "+this.getPrenume()+" primeste"+sumaFinantata+" Euro/zi in proiect.");
+	//why protected? so we can't call it from the main
+	protected String afisareFinantare(int sumaFinantata) {
+		return this.getNume()+" "+this.getPrenume()+" primeste"+sumaFinantata+" Euro/zi in proiect.";
 	}
 
 }
