@@ -10,7 +10,7 @@ public abstract class ReaderAplicant {
 	
 	public abstract List<Aplicant> readAplicants(String file) throws FileNotFoundException;
 	
-	/* DNRY principle
+	/* DRY principle
 	 * 	-> pass scanner so cursor doesn't start from the beginning again
 	 * */
 	public void readFromFile(Scanner input, Aplicant aplicant) {
@@ -18,11 +18,12 @@ public abstract class ReaderAplicant {
 		aplicant.setPrenume(input.next());
 		aplicant.setVarsta(Integer.valueOf(input.nextInt()));
 		aplicant.setPunctaj(Integer.valueOf(input.nextInt()));
-		aplicant.setNr_proiecte(Integer.valueOf(input.nextInt()));
+		int nr = input.nextInt();
 		
-		String[] vect = new String[aplicant.getNr_proiecte()];
-		for (int i = 0; i < aplicant.getNr_proiecte(); i++)
+		String[] vect = new String[nr];
+		for (int i = 0; i < nr; i++)
 			vect[i] = input.next();
-		aplicant.setDenumireProiect(vect);
+		aplicant.setNr_proiecte(nr, vect);
+
 	}
 }
