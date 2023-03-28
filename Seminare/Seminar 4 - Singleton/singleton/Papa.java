@@ -44,7 +44,7 @@ public class Papa {
 
 	//must be static because it belongs to the class, not an object and therefore can be called
 	public static Papa getInstance() {
-		return papa; //EAGER INITIALISATION - constructor must be called only once
+		return papa; //EAGER INITIALISATION - constructor must be called only once; we initialise before using
 		
 		//static attributes are loaded ONLY when class is initialised
 		//vs.

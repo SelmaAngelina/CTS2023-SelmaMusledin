@@ -16,7 +16,7 @@ public class Program {
 			for(Aplicant angajat:listaAngajati) {
 				System.out.println(angajat.toString());
 				angajat.afisareaFinantarii();
-				angajat.afisareStatus();
+				//angajat.afisareStatus();
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
