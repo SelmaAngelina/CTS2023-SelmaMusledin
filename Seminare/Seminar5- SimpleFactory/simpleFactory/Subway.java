@@ -16,7 +16,7 @@ public class Subway implements TransportVehicle {
 		
 	}
 
-	public Subway(int noSeats) {
+	protected Subway(int noSeats) {
 		this.noSeats = noSeats;
 	}
 	
