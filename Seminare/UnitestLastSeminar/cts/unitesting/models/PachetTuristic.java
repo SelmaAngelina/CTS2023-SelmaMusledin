@@ -1,6 +1,6 @@
 package cts.unitesting.models;
 
-public class PachetTuristic {
+public class PachetTuristic implements IPachetTuristic{
 	private IPersoana client;
 	private String destinatie;
 	private Double pret;

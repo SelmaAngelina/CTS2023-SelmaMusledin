@@ -3,17 +3,17 @@ package cts.unitesting.models;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
-public class StubPerson implements IPerson {
+public class Person implements IPersoana {
 	private String nume;
 	public String CNP;
 	
-	public StubPerson(){
+	public Person(){
 		this.nume="Nume initial";
 		this.CNP="1000000000001";
 	}
 	
 	
-	public StubPerson(String nume, String CNP){
+	public Person(String nume, String CNP){
 		this.nume=nume;
 		this.CNP=CNP;
 	}
