@@ -3,6 +3,7 @@ package cts.unitesting.tests;
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import cts.unitesting.mock.StubPersoanaMinora;
@@ -12,6 +13,7 @@ import cts.unitesting.models.Person;
 
 public class TestingPachetTuristic {
 
+	@Tag("tag1")
 	@Test
 	void testPoateRezerva() {
 		IPersoana persoana = new Person();
@@ -19,6 +21,7 @@ public class TestingPachetTuristic {
 		PachetTuristic pachetTuristic = new PachetTuristic(persoana, null, null);
 		assertTrue(pachetTuristic.poateRezerva());
 	}
+	
 	
 	@Test
 	void testNuPoateRezerva() {

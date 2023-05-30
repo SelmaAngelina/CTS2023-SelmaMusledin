@@ -2,6 +2,7 @@ package cts.unitesting.tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import cts.unitesting.mock.FakePachet;
@@ -10,6 +11,7 @@ import cts.unitesting.models.IPachetTuristic;
 
 public class TestingAgentieTurism {
 
+	@Tag("tag1")
 	@Test
 	void testPretPachetTuristic() {
 		FakePachet pachet = new FakePachet();
