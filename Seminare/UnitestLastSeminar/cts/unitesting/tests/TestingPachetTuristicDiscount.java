@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import cts.unitesting.mock.FakePerson;
 import cts.unitesting.models.PachetTuristic;
 
-class TestingPachetTuristicDiscount{
+public class TestingPachetTuristicDiscount{
 	
 	@Test
 	void shouldApplyDiscountForSenior() {

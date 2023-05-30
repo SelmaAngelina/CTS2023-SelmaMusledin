@@ -8,7 +8,7 @@ import cts.unitesting.mock.FakePachet;
 import cts.unitesting.models.AgentieTurism;
 import cts.unitesting.models.IPachetTuristic;
 
-class TestingAgentieTurism {
+public class TestingAgentieTurism {
 
 	@Test
 	void testPretPachetTuristic() {

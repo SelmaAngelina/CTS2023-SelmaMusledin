@@ -10,7 +10,7 @@ import cts.unitesting.models.IPersoana;
 import cts.unitesting.models.PachetTuristic;
 import cts.unitesting.models.Person;
 
-class TestingPachetTuristic {
+public class TestingPachetTuristic {
 
 	@Test
 	void testPoateRezerva() {
